@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Happy House</title>
+    <link rel="icon" href="data:;base64,=">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/326e1cf751.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/signup.js"></script>
+</head>
+
+<body class="">
+    <div id="header">
+        <div class="gtop">
+            <div class="dvwrap">
+                <h1><a class="logo" href="index.html">happy house</a></h1>
+                <div class="topsear">
+                    <form action="#" method="GET" name="searchForm">
+                        <input type="text" name="srSearchVal" placeholder="검색어를 입력하세요" title="검색어 입력" value=""
+                            value=""><a href="#">검색</a></form>
+                </div>
+                <div class="top_confirmon">
+	                <ul>
+	                    <li><a href="../signup.html">회원가입</a></li>
+	                    <li><a href="#" data-toggle="modal" data-target="#modalLogin">로그인</a></li>
+	                </ul>
+                </div>
+                <div class="top_confirmoff">
+	                <ul>
+	                    <li><span id="username"></span></li>
+	                    <li><a href="#"  id="logoutBtn">로그아웃</a></li>
+	                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="headerWrap">
+            <!-- (s) 탑 메뉴 -->
+            <div class="gnb cB" id="gnb">
+                <ul class="topmenu" id="head-menu">
+                    <li class="lnb1">
+                        <a href="#">Happy House</a>
+                    </li>
+                    <li class="lnb2">
+                        <a href="#">행복한 집 매물</a>
+                    </li>
+                    <li class="lnb3">
+                        <a href="#">관심 지역</a>
+                    </li>
+                    <li class="lnb4">
+                        <a href="#">관심 매물</a>
+                    </li>
+                    <li class="lnb5">
+                        <a href="#">HH News</a>
+                    </li>
+                    <li class="lnb6">
+                        <a href="#">공지사항</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="momenu">
+                <a class="menu-icon" href="#"><img src="img/icon_menu.png" alt="메뉴"></a>
+                <div class="mbg">
+                </div>
+                <div class="navigation">
+                    <div class="tit">
+                        <p><a class="mclose" href="#!"><img src="img/icon_close.png" alt="메뉴 닫기"></a></p>
+                        <ul>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </div>
+                    <ul class="side-menu">
+                        <li class="nav0">
+                            <a href="#">Happy House</a>
+                        </li>
+                        <li class="nav1">
+                            <a href="#">행복한 집 매물</a>
+                        </li>
+
+                        <li class="nav2">
+                            <a href="#">관심 지역</a>
+                        </li>
+
+                        <li class="nav3">
+                            <a href="#">관심 매물</a>
+                        </li>
+
+                        <li class="nav4">
+                            <a href="#">HH News</a>
+                        </li>
+                        
+                        <li class="nav5">
+                            <a href="#">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mo메뉴 끝 -->
+        </div>
+        <div class="gnb_bg">
+        </div>
+    </div>
+
+    <section id="modal">
+        <div class="modal fade" id="modalLogin">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	
+	      <div class="modal-header">
+	        <h4 class="modal-title">LogIn</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	
+	      <div class="modal-body">
+		      <div class="form-group">
+			    <label for="userid">ID:</label>
+			    <input type="text" class="form-control" id="userid" placeholder="Enter ID" name="userid" required>
+		      </div>
+		      <div class="form-group">
+			    <label for="userpass">Password:</label>
+			    <input type="password" class="form-control" id="userpass" placeholder="Enter Password" name="userpass" required>
+		      </div>
+	      </div>
+	
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal" id="loginBtn">LogIn</button>
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+	      </div>
+	
+	    </div>
+	  </div>
+	</div>
+    </section>
+
+    <section id="sub-visual">
+        <div class="info">
+            <div class="info-visual">
+                <h2>회원가입</h2>
+                <p class="text">ALWAYS WITH YOU, <em>Happy House</em></p>
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="sign-up">
+        <h2 style="font-size: 30px;">회원 가입</h2>
+        <hr style="border: 1px solid ;"/>
+        <div id="form-container">
+		<form action="">
+		  <div class="form-group">
+		    <label for="uid">User ID (* 20자 이내)</label>
+		    <div id="uidrow">
+			    <input type="text" class="form-control col-sm-6" id="uid" placeholder="ID" name="uid" required>
+			    <button type="button" class="btn btn-primary col-sm-2" id="checkID">ID 중복확인</button>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="pwd">User Password (* 20자 이내)</label>
+		    <input type="password" class="form-control" id="pwd" placeholder="Password" name="pwd" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="pwdcon">User Password Confirm (* 20자 이내)</label>
+		    <input type="password" class="form-control" id="pwdcon" placeholder="Password" name="pwdcon" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="uname">User Name (* 10자 이내)</label>
+		    <input type="text" class="form-control" id="uname" placeholder="Name" name="uname" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="cellphone">User CellPhone (* 20자 이내)</label>
+		    <input type="text" class="form-control" id="cellphone" placeholder="01055557777" name="cellphone" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="email">User E-mail (* 50자 이내)</label>
+		    <input type="email" class="form-control" id="email" placeholder="example@example.com" name="email" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="addr">User Address (*)</label>
+		    <input type="text" class="form-control" id="addr" placeholder="CLick!" name="addr" required>
+		  </div>
+		  <div class="form-group">
+		    <label for="addr2">User Address 2 (50자 이내)</label>
+		    <input type="text" class="form-control" id="addr2" placeholder="주소 상세" name="addr2" required>
+		  </div>
+		  <div class="form-group">
+		  		<button type="submit" id="signUp" class="join btn">JOIN IN</button>
+                <button class="reset btn">다시적기</button>
+           </div>
+		</form>
+	</div>	
+    </section>
+
+    <section id="footer">
+        <div class="footer-wrap">
+            본 사이트의 콘텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.<br/>
+            (12345) 서울특별시 강남구 테헤란로 212 (역삼동 718-5번지) TEL : 02-1234-5678<br/>
+            COPYRIGHT by Yeonwook & Hyunmo 2020., All Rights Reserved
+        </div>
+    </section>
+
+</body>

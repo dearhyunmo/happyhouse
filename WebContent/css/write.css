@@ -1,0 +1,77 @@
+
+#notice-write{width:1200px; margin: 20px auto 80px;}
+
+table{width:100%;border-spacing:0;border-top:4px solid #1459a6;table-layout:fixed;}
+.b-col01{width:20%;}
+.b-col02{width:20%;}
+.b-col03{width:20%;}
+.b-col04{width:20%;}
+table thead th{padding:16px 10px;border-bottom:1px solid #e7e7e7;background-color:#f5f5f5;font-weight:400;}
+table tbody th{padding:12px 15px;border-bottom:1px solid #e7e7e7;background-color:#f5f5f5;font-weight:500;text-align:left;}
+table tbody td{position:relative;padding:12px 15px;border-bottom:1px solid #e7e7e7;font-weight:200;}
+table tbody td.b-td-left{text-align:left !important;}
+.b-input{padding:7px 10px;width:100%;border:1px solid #d0d0d0;font-family:inherit;font-weight:300;font-size:16px;color:#666;box-sizing:border-box;border-radius:5px;-webkit-appearance:none;-moz-appearance:none;appearance:none;vertical-align:middle;}
+.b-period-box > p{padding:0 0 5px;}
+.b-period-box span{padding:0 2px 0 5px;}
+.b-input.datepicker{padding-right:40px;width:calc(50% - 6px);max-width:183px;background:url(../img/write/ico-datepicker02.gif) no-repeat right 10px top 50%;}
+.b-textarea{height:300px;}
+.b-file-box.itype01:after{content:"";display:block;clear:both;}
+.b-file-box.itype01{display:none;}
+.b-file-box.itype02{display:none;}
+.b-file-box.itype03 .b-input{margin:0 3px 0 0;max-width:calc(70% - 53px);}
+.b-file-box.itype03 .b-add-btn{padding:8px;background-color:#fec240;color:#fff;border-radius:5px;vertical-align:middle;}
+.b-file-box.itype03 .b-file-btn{padding:8px;background:#dedede;color:#333;border-radius:5px;cursor:pointer;vertical-align:middle;}
+.b-file-box.itype03 div:nth-of-type(1){padding:0 0 10px;}
+.b-file-box.itype03 div:nth-of-type(2) ul li{padding:0 0 10px;}
+.b-file-box.itype03 div:nth-of-type(2) ul li:last-of-type{padding:0;}
+.b-file-box.itype03 div:nth-of-type(2) ul li a{display:inline-block;margin:-2px 0 0 10px;width:15px;height:15px;background:url(../img/write/btn-del-file.gif) no-repeat 0 center;vertical-align:middle;text-indent:-99999px;}
+.b-file-box .b-guide-txt{color:#979797;}
+.b-sel-box{display:block;position:relative;z-index:0;max-width:100px;text-align:left;vertical-align:middle;}
+.b-sel-title{display:block;padding:9px 10px;font-weight:300;border:1px solid #d0d0d0;background:#fff url(../img/write/btn-sel-open02.gif) no-repeat right 12px center;color:#666;box-sizing:border-box;vertical-align:middle;border-radius:5px;text-overflow: ellipsis;white-space: nowrap;word-wrap: normal;overflow: hidden;}
+.b-sel-box.close{z-index:20;}
+.b-sel-box.close .b-sel-box-title{background:#fff url(../img/write/btn-sel-close02.gif) no-repeat right 12px center;}
+.b-sel-box.close ul{display:block;}
+.b-sel-box ul{display:none;position:absolute;top:35px;width:100%;}
+.b-sel-box ul li{width:100%;height:100%;border:1px solid #d8d8d8;border-top:none;background-color:#fff;font-weight:300;box-sizing:border-box;box-shadow:none;-moz-appearance:none;-webkit-appearance:none;appearance:none;border-radius:0;}
+.b-sel-box ul li a{display:block;padding:9px 10px;font-weight:200;color:#333;box-sizing:border-box;}
+.b-sel-box ul li:hover a{background-color:#7591b1;color:#fff;}
+.b-tel-box span{display:inline-block;padding:0 5px;text-indent:-99999px;}
+.b-tel-box label{display: block;position:absolute;width:0;height:0;text-indent:-9999999px;overflow:hidden;}
+.b-tel-box .b-input{width:calc(33.33% - 7px);max-width:150px;}
+.b-period-box span{display:inline-block;text-indent:-99999px;}
+.b-address-box label{display: block;position:absolute;width:0;height:0;text-indent:-9999999px;overflow:hidden;}
+.b-address-box > div div{display:inline-block;padding:0 0 10px;max-width:calc(100% - 77px);}
+.b-address-box > div div span{display:inline-block;padding:0 5px;text-indent:-99999px;}
+.b-address-box > div div .b-input{width:calc(50% - 10px);max-width:189px;}
+.b-address-box > div > button{padding:10px;background:#dedede;font-weight:200;color:#333;border-radius:5px;line-height:1;cursor:pointer;vertical-align:middle;}
+.b-radio{display:none;}
+.b-radio + label{display:inline-block;position:relative;margin-right:23px;padding-left:28px;font-weight:400;color:#666;cursor:pointer;}
+.b-radio + label:before{content:"";display:inline-block;position:absolute;top:-2px;left:0;padding:0 0 0 3px;width:20px;height:20px;border:1px solid #c8c8c8;background-color:#fff;font-size:13px;border-radius:20px;box-sizing:border-box;}
+.b-radio:hover + label:after,.b-radio:checked + label:after{content:"";display:block;position:absolute;top:4px;left:6px;width:8px;height:8px;background-color:#0b50a1;border-radius:8px;}
+.b-chk{display:none;}
+.b-chk + label{display:inline-block;position:relative;margin:0 23px 10px 0;padding-left:28px;font-weight:400;color:#666;cursor:pointer;}
+.b-chk + label:before{content:"";display:inline-block;position:absolute;top:-2px;left:0;padding:0 0 0 3px;width:20px;height:20px;border:1px solid #c8c8c8;background-color:#fff;font-size:13px;border-radius:3px;box-sizing:border-box;}
+.b-chk:hover + label:before,.type02 .b-chk:checked + label:before{content:"\2714";padding:3px 0 0 3px;background:#0b50a1;color:#fff;}
+.b-relation-box div:nth-of-type(1){padding:0 0 5px;}
+.b-relation-box div:nth-of-type(2) label{padding:0 10px 0 0;}
+.b-relation-box div:nth-of-type(2) .b-input{max-width:calc(100% - 41px);}
+.b-url-box .b-input{margin:0 0 10px;max-width:400px;}
+.b-url-box p{color:#666;line-height:25px;word-break:break-all;}
+.b-url-box p span{font-weight:500;color:#FF0000;}
+
+.b-last-btn{float: right; padding-top: 10px;}
+.b-last-btn .b-list-btn{padding:8px;background:#dedede; color:#333;border-radius:5px;cursor:pointer;vertical-align:middle;}
+.b-last-btn .b-reset-btn{padding:8px;background:#E57373;color:#333;border-radius:5px;cursor:pointer;vertical-align:middle;}
+.b-last-btn .b-write-btn{padding:8px;background:#64B5F6;color:#333;border-radius:5px;cursor:pointer;vertical-align:middle;}
+
+
+
+@media screen and (max-width:768px) {    
+    table tbody th{padding:10px 5px;font-size:14px;}
+    .b-sel-title{font-size:14px;}
+    .b-sel-box ul li a{font-size:14px;}
+    table tbody td{font-size:14px;}
+    .b-file-box.itype03 div:nth-of-type(1){text-align:right;}
+    .b-file-box.itype03 .b-input{margin:0 0 5px;max-width:100%;}
+    .b-url-box p{line-height:20px;}
+}

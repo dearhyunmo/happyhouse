@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Happy House</title>
+    <link rel="icon" href="data:;base64,=">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/list.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/326e1cf751.js" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/signup.js"></script>
+    
+</head>
+
+<body class="">
+    <div id="header">
+        <div class="gtop">
+            <div class="dvwrap">
+                <h1><a class="logo" href="../index.html">happy house</a></h1>
+                <div class="topsear">
+                    <form action="#" method="GET" name="searchForm">
+                        <input type="text" name="srSearchVal" placeholder="검색어를 입력하세요" title="검색어 입력" value=""
+                            value=""><a href="#">검색</a></form>
+                </div>
+                <div class="top_confirmon">
+	                <ul>
+	                    <li><a href="../signup.html">회원가입</a></li>
+	                    <li><a href="#" data-toggle="modal" data-target="#modalLogin">로그인</a></li>
+	                </ul>
+                </div>
+                <div class="top_confirmoff">
+	                <ul>
+	                    <li><span id="username"></span></li>
+	                    <li><a href="#"  id="logoutBtn">로그아웃</a></li>
+	                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="headerWrap">
+            <!-- (s) 탑 메뉴 -->
+            <div class="gnb cB" id="gnb">
+                <ul class="topmenu" id="head-menu">
+                    <li class="lnb1">
+                        <a href="#">Happy House</a>
+                    </li>
+                    <li class="lnb2">
+                        <a href="#">행복한 집 매물</a>
+                    </li>
+                    <li class="lnb3">
+                        <a href="#">관심 지역</a>
+                    </li>
+                    <li class="lnb4">
+                        <a href="#">관심 매물</a>
+                    </li>
+                    <li class="lnb5">
+                        <a href="#">HH News</a>
+                    </li>
+                    <li class="lnb6">
+                            <a href="noticelist.html">공지사항</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="momenu">
+                <a class="menu-icon" href="#"><img src="../img/icon_menu.png" alt="메뉴"></a>
+                <div class="mbg">
+                </div>
+                <div class="navigation">
+                    <div class="tit">
+                        <p><a class="mclose" href="#!"><img src="../img/icon_close.png" alt="메뉴 닫기"></a></p>
+                        <ul>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">로그인</a></li>
+                        </ul>
+                    </div>
+                    <ul class="side-menu">
+                        <li class="nav0">
+                            <a href="#">Happy House</a>
+                        </li>
+                        <li class="nav1">
+                            <a href="#">행복한 집 매물</a>
+                        </li>
+
+                        <li class="nav2">
+                            <a href="#">관심 지역</a>
+                        </li>
+
+                        <li class="nav3">
+                            <a href="#">관심 매물</a>
+                        </li>
+
+                        <li class="nav4">
+                            <a href="#">HH News</a>
+                        </li>
+                        
+                        <li class="nav5">
+                            <a href="noticelist.html">공지사항</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mo메뉴 끝 -->
+        </div>
+        <div class="gnb_bg">
+        </div>
+    </div>
+
+    <section id="modal">
+        <div class="modal fade" id="modalLogin">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	
+	      <div class="modal-header">
+	        <h4 class="modal-title">LogIn</h4>
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	
+	      <div class="modal-body">
+		      <div class="form-group">
+			    <label for="userid">ID:</label>
+			    <input type="text" class="form-control" id="userid" placeholder="Enter ID" name="userid" required>
+		      </div>
+		      <div class="form-group">
+			    <label for="userpass">Password:</label>
+			    <input type="password" class="form-control" id="userpass" placeholder="Enter Password" name="userpass" required>
+		      </div>
+	      </div>
+	
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal" id="loginBtn">LogIn</button>
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+	      </div>
+	
+	    </div>
+	  </div>
+	</div>
+    </section>
+
+    <section id="sub-visual">
+        <div class="info">
+            <div class="info-visual">
+                <h2>공지사항</h2>
+                <p class="text">ALWAYS WITH YOU, <em>Happy House</em></p>
+            
+            </div>
+        </div>
+    </section>
+
+    <section id="notice-list">
+        <div>
+            <legend>공지사항</legend>
+            <table summary="번호, 제목, 작성자, 등록일, 조회, 첨부파일로 구성된 공지사항을 보여주는 표">
+                <colgroup>
+                    <col class="b-col01">
+                    <col class="b-col02">
+                    <col class="b-col03">
+                    <col class="b-col04">
+                    <col class="b-col05">
+                    <col class="b-col06">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">NO.</th>
+                        <th scope="col">제목</th>
+                        <th scope="col">작성자</th>
+                        <th scope="col">등록일</th>
+                        <th scope="col">조회</th>
+                        <th scope="col" class="b-no-right">파일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="b-top-box">
+                        <td class="b-num-box">공지</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="#" title="자세히 보기"><span>[공지]</span> &lt;공지글&gt; 게시판 공지 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-lock"><span>비밀글</span></p>
+                                    <p class="b-new"><span>NEW</span></p>
+                                    <p class="b-file b-zip"><span>zip</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-20</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            350                       
+                        </td>
+                        <td class="b-no-right">
+                            <div class="b-file-box"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="b-num-box">36656</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-new"><span>NEW</span></p>
+                                    <p class="b-file b-hwp"><span>한글</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-15</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            200                     
+                        </td>
+                        <td class="b-no-right">
+    
+                        </td>
+                    </tr>
+                    <tr class="b-reply-box">
+                        <td class="b-num-box"> </td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="#" title="자세히 보기">RE: 답글 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-lock"><span>비밀글</span></p>
+                                    <p class="b-new"><span>NEW</span></p>
+                                    <p class="b-file b-xls"><span>xls</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-20</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            280                     
+                        </td>
+                        <td class="b-no-right">
+                            <div class="b-file-box"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="b-num-box">36655</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-file b-pdf"><span>pdf</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-01</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-15</td>
+                        <td>
+                            30                    
+                        </td>
+                        <td class="b-no-right">
+                            <div class="b-file-box"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="b-num-box">36654</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-file b-hwp"><span>한글</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-15</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            200                     
+                        </td>
+                        <td class="b-no-right">
+    
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="b-num-box">36653</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-file b-hwp"><span>한글</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-15</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            200                     
+                        </td>
+                        <td class="b-no-right">
+    
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="b-num-box">36652</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-file b-hwp"><span>한글</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-15</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            200                     
+                        </td>
+                        <td class="b-no-right">
+    
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="b-num-box">36651</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-file b-hwp"><span>한글</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-15</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            200                     
+                        </td>
+                        <td class="b-no-right">
+    
+                        </td>
+                    </tr>  
+                    <tr>
+                        <td class="b-num-box">36650</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-file b-hwp"><span>한글</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-15</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            200                     
+                        </td>
+                        <td class="b-no-right">
+    
+                        </td>
+                    </tr>    
+                    <tr>
+                        <td class="b-num-box">36649</td>
+                        <td class="b-td-left">
+                            <div class="b-title-box">
+                                <a href="noticeview.html" title="자세히 보기">게시판 테스트</a>
+                                <div class="b-etc-box">
+                                    <p class="b-file b-hwp"><span>한글</span></p>
+                                </div>
+                                <div class="b-m-con">
+                                    <span class="b-writer">작성자</span><span class="b-date">2019-12-15</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>작성자</td>
+                        <td>2020-09-16</td>
+                        <td>
+                            200                     
+                        </td>
+                        <td class="b-no-right">
+    
+                        </td>
+                    </tr>                    
+                </tbody>
+            </table>
+            <section id="paging">
+            	<div class="type02">
+					<div class="b-paging-wrap"> 
+						<ul>
+							<li class="first pager">
+								<a href="#a" title="첫 페이지로 이동하기"></a></li>
+							<li class="prev pager">
+								<a href="#a" title="이전 페이지로 이동하기"></a></li>
+							<li>
+								<a class="active" href="#a">1</a></li>
+							<li>
+								<a href="#a">2</a></li>	
+							<li>
+								<a href="#a">3</a></li>	
+							<li>
+								<a href="#a">4</a></li>	
+							<li>
+								<a href="#a">5</a></li>	
+							<li>
+								<a href="#a">6</a></li>	
+							<li>
+								<a href="#a">7</a></li>	
+							<li>
+								<a href="#a">8</a></li>	
+							<li>
+								<a href="#a">9</a></li>	
+							<li>
+								<a href="#a">10</a></li>	
+							<li class="next pager">
+								<a href="#a" title="다음 페이지로 이동하기"></a></li>
+							<li class="last pager">
+								<a href="#a" title="마지막 페이지로 이동하기"></a></li>
+						</ul>
+					</div>
+				</div>
+            </section>
+            <div class="top_confirmoff">
+	           	<button class="b-write-btn" onclick="location.href='noticewrite.html'" >글 작성</button>
+           </div>	
+        </div>
+    </section>
+    
+    <section id="footer">
+        <div class="footer-wrap">
+            본 사이트의 콘텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사, 배포 등을 금합니다.<br/>
+            (12345) 서울특별시 강남구 테헤란로 212 (역삼동 718-5번지) TEL : 02-1234-5678<br/>
+            COPYRIGHT by Yeonwook & Hyunmo 2020., All Rights Reserved
+        </div>
+    </section>
+</body>
