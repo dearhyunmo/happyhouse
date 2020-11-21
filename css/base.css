@@ -359,10 +359,6 @@ ul.square {
 ul.circle {
   list-style: circle outside;
 }
-ul.disc,
-.entry-content-wrapper ul {
-  list-style: disc outside;
-}
 ul ul,
 ul ol,
 ol ol,
