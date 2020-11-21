@@ -316,102 +316,136 @@
                 itemtype="https://schema.org/CreativeWork"
               >
                 <div class="avia_textblock" itemprop="text">
-                  <p class="sub-title en-txt03"><span class="txt-ani">JibSoon's FAQ</span><br /></p>
+                  <p class="sub-title en-txt03">
+                    <span class="txt-ani">Let's look up</span><br />
+                    <span class="color-cc txt-ani">JibDol & JibSoons's houses</span>
+                  </p>
                 </div>
               </section>
             </div>
           </div>
         </div>
         <div
-          id="meth-sec03"
-          class="av-layout-grid-container entry-content-wrapper main_color av-flex-cells avia-builder-el-18 el_after_av_layout_row el_before_av_layout_row submenu-not-first container_wrap fullsize"
+          id="search_bar"
+          class="av-layout-grid-container entry-content-wrapper main_color av-flex-cells avia-builder-el-0 el_before_av_layout_row avia-builder-el-first container_wrap fullsize"
+          style="background-color: #4d4d4d"
         >
           <div
-            class="flex_cell no_margin av_one_full avia-builder-el-19 avia-builder-el-no-sibling av-zero-padding"
+            class="flex_cell no_margin av_one_full avia-builder-el-1 avia-builder-el-no-sibling av-zero-padding"
             style="vertical-align: top; padding: 0"
           >
-            <div class="flex_cell_inner">
+            <div class="flex_select_box">
+              <section
+                class="av_textblock_section"
+                itemscope="itemscope"
+                itemtype="https://schema.org/CreativeWork"
+              >
+                <div class="avia_textblock" itemprop="text">
+                  <select id="sido">
+                    <option value="서울시">서울시</option>
+                    <option value="창원시">창원시</option>
+                    <option value="부산시">부산시</option>
+                  </select>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="meth-sec07"
+          class="av-layout-grid-container entry-content-wrapper main_color av-flex-cells avia-builder-el-7 el_after_av_layout_row el_before_av_layout_row submenu-not-first container_wrap fullsize"
+        >
+          <div
+            class="flex_cell no_margin av_one_map avia-builder-el-10 el_after_av_cell_one_half avia-builder-el-last av-zero-padding"
+            style="vertical-align: top; padding: 0"
+          >
+            <div class="flex_cell_inner searchmap">
+              <div id="map"></div>
+              <script
+                type="text/javascript"
+                src="//dapi.kakao.com/v2/maps/sdk.js?appkey=53a87b945854a8503a27ecf8ff801da0"
+              ></script>
+              <script>
+                var container = document.getElementById('map');
+                var options = {
+                  center: new kakao.maps.LatLng(33.450701, 126.570667),
+                  level: 3,
+                };
+
+                var map = new kakao.maps.Map(container, options);
+              </script>
+            </div>
+          </div>
+          <div
+            class="flex_cell no_margin av_one_search avia-builder-el-8 el_before_av_cell_one_half avia-builder-el-first av-zero-padding"
+            style="vertical-align: top; padding: 0"
+          >
+            <div class="flex_cell_inner searchresult">
               <div
-                class="avia-image-container av-styling- avia-builder-el-20 avia-builder-el-no-sibling avia-align-center"
+                class="avia-image-container av-styling- avia-builder-el-9 avia-builder-el-no-sibling avia-align-center"
                 itemscope="itemscope"
                 itemtype="https://schema.org/ImageObject"
               >
-                <div class="avia-image-container-inner" style="width: 90%">
-                  <div class="q_a">
-                    <ul>
-                      <li>
-                        <div class="b-quest-box">
-                          <span>카테고리</span>
-                          <span>04</span>
-                          <span>Q</span>
-                          <span><img src="img/img-question.png" alt="question" /></span>
-                          <p class="b-title-box">
-                            <a href="#a">FAQ 질문</a>
-                          </p>
-                        </div>
-                        <div class="b-ans-box">
-                          <div>
-                            <span>A</span>
-                            <span><img src="img/img-answer.png" alt="question" /></span>
-                            <p>faq 답변</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="b-quest-box">
-                          <span>카테고리</span>
-                          <span>03</span>
-                          <span>Q</span>
-                          <span><img src="img/img-question.png" alt="question" /></span>
-                          <p class="b-title-box">
-                            <a href="#a">FAQ 질문</a>
-                          </p>
-                        </div>
-                        <div class="b-ans-box">
-                          <div>
-                            <span>A</span>
-                            <span><img src="img/img-answer.png" alt="question" /></span>
-                            <p>faq 답변</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="b-quest-box">
-                          <span>카테고리</span>
-                          <span>02</span>
-                          <span>Q</span>
-                          <span><img src="img/img-question.png" alt="question" /></span>
-                          <p class="b-title-box">
-                            <a href="#a">FAQ 질문</a>
-                          </p>
-                        </div>
-                        <div class="b-ans-box">
-                          <div>
-                            <span>A</span>
-                            <span><img src="img/img-answer.png" alt="question" /></span>
-                            <p>faq 답변</p>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="b-quest-box">
-                          <span>카테고리</span>
-                          <span>01</span>
-                          <span>Q</span>
-                          <span><img src="img/img-question.png" alt="question" /></span>
-                          <p class="b-title-box">
-                            <a href="#a">FAQ 질문</a>
-                          </p>
-                        </div>
-                        <div class="b-ans-box">
-                          <div>
-                            <span>A</span>
-                            <span><img src="img/img-answer.png" alt="question" /></span>
-                            <p>faq 답변</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                <div
+                  class="avia-image-container-inner scroller"
+                  style="width: 100%; background-color: #d1ffed; height: 500px"
+                >
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
+                  </div>
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
+                  </div>
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
+                  </div>
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
+                  </div>
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
+                  </div>
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
+                  </div>
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
+                  </div>
+                  <div class="search_result">
+                    <div class="search_txt">
+                      <span>광화문 풍림 스페이스본</span><br />
+                      <span>162,000만원</span><br />
+                      <span>ㅁㄴㅇㄹ</span>
+                    </div>
                   </div>
                 </div>
               </div>

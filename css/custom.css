@@ -87,7 +87,7 @@ input[type=submit], input[type=button], input[type=text] {
 	line-height:1.1;
 }
 #avia-menu a{
-	font-size:13px;
+	font-size:14px;
 	color:#1f2120;
 }
 #avia-menu span{
@@ -651,7 +651,7 @@ h1{
 	color: #cccccc;
 }
 #cap-sec01{
-	padding:120px 30px 0;
+	padding:60px 30px 0;
 	text-align:Center;
 }
 .text-center{
@@ -1316,11 +1316,14 @@ h1{
 	margin-left:0;
 }
 .styledSelect{
-	background:#fff url(../../../../img/contact-icon02.png) no-repeat 90% center !important;
+	background:#fff no-repeat 90% center !important;
 }
-.styledSelect, .options{
-	cursor:pointer;
+
+#sido{
+	display: none !important;
 }
+
+
 #cul-sec01 .avia-image-container.avia-align-right{
 	margin:40px 0 0 ;
 }
@@ -2842,9 +2845,13 @@ div[class*="thy-top"] {
     max-width: 1140px;
     margin: 0 auto;
 }
-#meth-sec01, #meth-sec02, #meth-sec03, #meth-sec04, #meth-sec07{
-	max-width:1400px;
+#meth-sec01, #meth-sec02, #meth-sec03, #meth-sec04{
+	ax-width:1400px;
 	margin:0 auto;
+}
+#meth-sec07{
+	max-width:1400px;
+	margin:30px auto 0px;
 }
 #main-sec07{
 	max-width:1580px;
@@ -2940,6 +2947,42 @@ div[class*="thy-top"] {
 .home .av-layout-grid-container .flex_cell_inner{
 	padding:0 40px;
 }
+.searchresult, .searchmap  {
+	padding:0 20px !important;
+}
+.scroller{
+	overflow-y:scroll;
+}
+.scroller::-webkit-scrollbar {
+    width: 10px;
+  }
+  .scroller::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  .scroller::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white;
+  }
+.search_result{
+	width: 80%;
+	 background-color: #8fe6c4;
+	  margin: 10px auto
+}
+.search_txt{
+	padding: 13px 0;
+    border-right: none;
+    font-size: 14px;
+}
+
+.flex_select_box{
+	margin: 0 90px;
+	text-align: center;
+}
+
 #wrap_all{
 	max-width:1920px;
 	margin:0 auto;
