@@ -1,0 +1,165 @@
+.capul li a{
+	list-style:none;
+	margin:0;
+	display:inline-block;
+	font-size:16px;
+	color:#333;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:400;
+	font-style:italic;
+	margin:0 15px;
+}
+#case-sec01{
+	max-width:1240px;
+	margin:0 auto;
+	margin-bottom:100px;
+	min-height:300px;
+}
+#case-sec01 .av-magazine-sort{
+	float:none;
+}
+#case-sec01 .av-magazine-top-bar {
+	text-align: center;
+    margin-bottom: 80px;
+    border-bottom: 0;
+}
+.inner_sort_button span{
+	font-size:16px;
+	color:#999999;
+	font-weight:400;
+}
+ .active_sort .inner_sort_button span{
+	color:#333;
+}
+#case-sec01 .av-magazine{
+    margin-top: -15px;
+}
+#case-sec01 .av-magazine .av-magazine-group > article{
+    width: 44%;
+    float: left;
+    clear: none;
+    margin-right: 6%;
+	border-bottom:1px solid #e0e0e0;
+	padding:20px 0;
+}
+#case-sec01 .av-magazine .av-magazine-group > article:nth-child(2n){
+	margin-right:0;
+}
+#case-sec01 .av-magazine .av-magazine-group > article:first-child, #case-sec01 .av-magazine .av-magazine-group > article:nth-child(2){
+	border-top:1px solid #e0e0e0;
+}
+#case-sec01 .av-magazine-title{
+    padding: 5px 0 0 0;
+}
+.av-magazine-title a{
+	font-size:22px;
+    letter-spacing: 0;
+	color:#333333;
+}
+.image-overlay, .image-overlay-inside{
+	display:none !important;
+}
+
+.grid-content .avia-arrow, .av-magazine-time{
+	display:none;
+}
+.av-magazine-cats, .av-magazine-cats a, .blog-categories, .blog-categories a{
+	font-size:16px;
+	color:#666;
+	font-weight:400;
+	font-style:italic;
+}
+.av-magazine-cats a{
+	font-size:12.5px;
+	word-break:keep-all;
+	color:inherit !important;
+}
+.av-magazine-cats{
+	display:block;
+	max-width:80%;
+}
+.magazine-more{
+	position: absolute;
+    right: 0;
+    top: 40px;
+    padding-left: 55px;
+	margin-left:-12px;
+}
+.magazine-more a, .port-more a{
+	font-size:16px;
+	coloR:#000000;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:400;
+	font-style:italic;
+}
+.magazine-more a:before, .port-more a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 56%;
+    width: 43px;
+    height: 1px;
+    background: #373737;
+}
+#case-sec01 .av-magazine-content-wrap{
+    border: 0;
+}
+.port-more{
+	position: relative;
+    padding-left: 55px;
+}
+/*
+#high-sec01 .grid-entry-title > a.title{
+	font-size:32px;
+	color:#333333;
+	font-family: handel-gothic,sans-serif;
+    letter-spacing: 0;
+	font-weight: bold;
+    line-height: 1.2;
+	display:block;
+}
+#high-sec01 .grid-entry-title{
+	text-align:left;
+}
+#high-sec01 .entry-content-header{
+	margin-top:30px;
+}
+#high-sec01 .grid-content{
+	position:relative;
+	padding:20px 0;
+}
+#high-sec01 .grid-entry-excerpt{
+	position: absolute;
+    top: 20px;
+}
+#high-sec01 .grid-entry .inner-entry{
+	box-shadow:none;
+}
+#high-sec01 .grid-sort-container > div:nth-child(3n-1){
+	margin:120px 35px 0;
+}
+
+#high-sec01 .no_margin.av_one_third{
+    width: 31.4% !important;
+}
+*/
+.all_sort_button span{
+	text-transform: lowercase;
+}
+
+
+
+
+
+
+/* dechive ¼öÁ¤ */
+#case-sec01 #av-magazine-1 div[id*="num_"] > article {
+    display: inline-block;
+    width: 45%;
+    margin-right: 10%;
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;	
+}
+#case-sec01 #av-magazine-1 div[id*="num_"] > article:nth-of-type(2n) {
+	margin-right:0;
+}
