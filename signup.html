@@ -364,6 +364,17 @@
                               </td>
                             </tr>
                             <tr>
+                              <th scope="row"><label for="wr-tit">Name</label></th>
+                              <td colspan="3">
+                                <input
+                                  type="text"
+                                  id="wr-tit"
+                                  name="wr-tit-name"
+                                  class="b-input itype01"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
                               <th scope="row"><label for="wr-writer">비밀번호</label></th>
                               <td>
                                 <input
@@ -397,6 +408,8 @@
                                         id="wr-ad-st"
                                         name="wr-ad-st-name"
                                         class="b-input"
+                                        readonly
+                                        onclick="execDaumPostcode()"
                                       />
                                     </div>
                                     <button type="button" onclick="execDaumPostcode()">
@@ -514,6 +527,21 @@
                                     id="wr-ad-detail"
                                     name="wr-ad-detail"
                                     class="b-input"
+                                  />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th scope="row">이메일</th>
+                              <td colspan="3">
+                                <div class="b-tel-box">
+                                  <label for="wr-tel-st">이메일</label
+                                  ><input
+                                    type="text"
+                                    id="wr-tel-st"
+                                    name="wr-tel-st-name"
+                                    class="b-input"
+                                    placeholder="(아이디)@jibdol.com 형식으로 입력해주세요."
                                   />
                                 </div>
                               </td>

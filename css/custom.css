@@ -1227,7 +1227,7 @@ h1{
 	margin-right:4%;
 }
 .form-row input, .form-row select, .styledSelect, .upload-name{
-	line-height:70px;
+	line-height:50px;
 	height:70px;
 	border:1px solid #ebebeb;
 	background:#fff !important;
@@ -1315,11 +1315,35 @@ h1{
 	list-style:none;
 	margin-left:0;
 }
-.styledSelect{
-	background:#fff no-repeat 90% center !important;
+
+#search_bar{
+	height: 70px;
 }
 
-#sido{
+.select{
+	display: inline;
+	height: 70px;
+}
+.styledSelect, .searchinput, .searchbutton{
+	background:#fff no-repeat 90% center !important;
+	width:150px;
+	height: 50px;
+	display: inline-block !important;
+	margin:15px 0;
+}
+
+
+.searchinput{
+	width:250px !important;
+	font-size: 16px;
+}
+
+.searchbutton{
+	width:100px;
+	height: 55px;
+}
+
+#dong, #btype, #tmethod{
 	display: none !important;
 }
 
@@ -4899,7 +4923,7 @@ Mobile Styles
 .type03 .b-address-box > div div{display:inline-block;padding:0 0 10px;max-width:calc(100% - 73px);}
 .wrapaddress{padding:0 !important;}
 .type03 .b-address-box > div div span{padding:0 8px;}
-.type03 .b-address-box > div div .b-input{width:calc(50% - 15px);max-width:155px;}
+.type03 .b-address-box > div div .b-input{width:calc(50% - 15px);max-width:355px;}
 .type03 .b-address-box > div > button{display:inline-block;padding:12px 10px;border:1px solid #474747;background:none;font-weight:200;font-size:15px;color:#191919;line-height:1;cursor:pointer;vertical-align:middle;}
 .type03 .b-radio{display:none;}
 .type03 .b-radio + label{display:inline-block;position:relative;margin-right:23px;padding-left:28px;font-weight:400;cursor:pointer;}
