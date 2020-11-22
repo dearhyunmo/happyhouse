@@ -414,7 +414,7 @@ span.txt-ani{
 }
 .foo-wr{
 	border-top:1px solid #ebebeb;
-	padding:40px 0 100px;
+	padding:40px 0 50px;
 }
 .foo-wr > div, .table > div{
 	display:table-cell;
@@ -1197,9 +1197,6 @@ h1{
 }
 #con-sec01 .avia-builder-el-first .flex_cell_inner{
 	padding-right:60px;
-}
-#con-sec01{
-	background:#f9fafd;
 }
 #con-sec02{
 	background:#f9fafd url(../../../../img/contact-img01.jpg) no-repeat right center;
@@ -2960,7 +2957,7 @@ div[class*="thy-top"] {
 	padding:40px 30px;
 }
 #con-sec01 .flex_cell_inner{
-	padding:80px 30px 130px;
+	padding:20px 30px 20px;
 }
 #con-sec01{
 	margin-top:90px;
@@ -3660,7 +3657,7 @@ Mobile Styles
 		padding:40px 30px;
 	}
 	#con-sec01 .flex_cell_inner{
-		padding:80px 30px 130px;
+		padding:20px 30px 20px;
 	}
 	#con-sec01{
 		margin-top:50px;
